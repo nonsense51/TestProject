@@ -1,4 +1,4 @@
-codeunit 50100 "TransferLineSplitUp"
+codeunit 50100 "PTE Transfer Line SplitUp"
 {
     trigger OnRun()
     var
@@ -17,7 +17,7 @@ codeunit 50100 "TransferLineSplitUp"
         CurrentTransferLine: Record "Transfer Line";
     begin
         InventorySetupRec.Get();
-        if not IsUserInGroup(InventorySetupRec."Allw Splitup Trans Line UsrGrp") then
+        if not IsUserInGroup(InventorySetupRec."PTE Alw Spl. Trans Line UsrGrp") then
             Error(ErrorMsg);
         TransferHeaderRec.Get();
         if TransferHeaderRec.Status <> TransferHeaderRec.Status::Open then

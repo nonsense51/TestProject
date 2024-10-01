@@ -11,7 +11,7 @@ pageextension 50002 "Transfer Order Subform Ext" extends "Transfer Order Subform
                 Ellipsis = true;
                 trigger OnAction()
                 var
-                    SplitUpCodeunit: Codeunit "TransferLineSplitUp";
+                    SplitUpCodeunit: Codeunit "PTE Transfer Line SplitUp";
                 begin
                     SplitUpCodeunit.Run();
                 end;
