@@ -1,0 +1,24 @@
+{
+    "id": "b79ce50c-c12f-41e6-96f0-90c8a940d098",
+    "name": "TEST",
+    "publisher": "Maksim",
+    "version": "1.0.0.0",
+    "supportedLocales": ["en-US","uk-UA"],
+    "platform": "24.0.0.0",
+    "application": "24.0.0.0",
+    "idRanges": [
+      {
+        "from": 50000,
+        "to": 60000
+      }
+    ],
+    "dependencies": [],
+    "resourceExposurePolicy": {
+      "allowDebugging": true
+    },
+    "runtime": "12.0",
+    "features": [
+      "NoImplicitWith", "TranslationFile"
+    ],
+    "target": "OnPrem"
+  }
